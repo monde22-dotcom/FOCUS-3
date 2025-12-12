@@ -37,12 +37,14 @@
       <div class="container">
         <h1>Welcome to the prototype website for the Focus Digital Archive</h1>
         <p>This prototype shows how a new visitor could navigate the Focus Digital Archive, find entries, and understand the context behind results.</p>
+        
         <a class="btn" href="how.html">Start exploring</a>
       </div>
     </section>
   </header>
 
   <main id="main" class="container main">
+    
     <section>
       <h2>What is Focus</h2>
       <p>Focus refers to the issues produced by the IDAF between the years 1952 to 1992. This website collects these issues and helps readers to access the information in a easy manner where they can traverse the contents by names, places, and subjects. This site is a simple public demo, useful for teaching, talks, and user onboarding.</p>
@@ -53,17 +55,17 @@
       <div class="grid">
         <article class="card">
           <h3>Browse by People</h3>
-          <p>See how names connect across volumes and cases.</p>
+          <p>Search the archive using the names of historical figures included within the collection.</p>
           <span class="badge">Index</span> <span class="badge">People</span>
         </article>
         <article class="card">
           <h3>Browse by Places</h3>
-          <p>Read events in location context, from provinces to towns.</p>
+          <p>Search the archive for material on a specific location from countries, provinces and towns.</p>
           <span class="badge">Index</span> <span class="badge">Places</span>
         </article>
         <article class="card">
           <h3>Browse by Subjects</h3>
-          <p>Follow thematic threads such as amnesty, disappearances, attacks on homes.</p>
+          <p>Search the archive using thematic threads such as Abductions, Banishments.</p>
           <span class="badge">Index</span> <span class="badge">Subjects</span>
         </article>
       </div>
@@ -72,48 +74,23 @@
     <section id="browse" class="container">
   <h2>Browse the archive</h2>
   <div class="cards">
-    <article class="card">
-      <h3>People</h3>
-      <p>Activists, victims, officials, witnesses linked to key moments.</p>
-      <a class="btn-secondary" href="#">Browse People</a>
-    </article>
-    <article class="card">
-      <h3>Places</h3>
-      <p>Countries, cities, prisons, sites of protest across the region.</p>
-      <a class="btn-secondary" href="#">Browse Places</a>
-    </article>
-    <article class="card">
-      <h3>Events</h3>
-      <p>Protests, massacres, trials, states of emergency.</p>
-      <a class="btn-secondary" href="#">Browse Events</a>
-    </article>
-  </div>
-</section>
-
 <section class="container section">
   <div class="cards cards--secondary">
-    <article class="card"><h3>Archival descriptions</h3><p>Item-level summaries and context.</p></article>
-    <article class="card"><h3>Authority records</h3><p>Standard names for people and organisations.</p></article>
-    <article class="card"><h3>Archival institutions</h3><p>Repositories and partners.</p></article>
-    <article class="card"><h3>Functions</h3><p>Activities such as policing and censorship.</p></article>
-    <article class="card"><h3>Subjects</h3><p>Detention, torture, exile, surveillance.</p></article>
-    <article class="card"><h3>Digital objects</h3><p>Scans, PDFs, audio, video.</p></article>
+    <article class="card"><h3>Archival descriptions.</p></article>
+    <article class="card"><h3>Authority records.</p></article>
+    <article class="card"><h3>Archival institutions.</p></article>
+    <article class="card"><h3>Functions.</p></article>
+    <article class="card"><h3>Subjects.</p></article>
+    <article class="card"><h3>Digital objects.</p></article>
   </div>
 </section>
-
   </main>
-
-  <footer>
-    <div class="container">
-      <small>© <span id="year"></span> Focus Digital Archive Prototype</small>
-    </div>
-  </footer>
   <script src="assets/script.js"></script>
 </body>
 </html>
 .cards--secondary{display:grid;gap:1rem}
 @media (min-width:900px){.cards--secondary{grid-template-columns:repeat(3,1fr)}}
-<section class="container section">
+<section class=" container section">
   <h2>Featured case studies</h2>
   <div class="cards">
     <article class="card">
@@ -128,3 +105,8 @@
     </article>
   </div>
 </section>
+footer>
+    <div class="container">
+      <small>© <span id="year"></span> Focus Digital Archive Prototype</small>
+    </div>
+  </footer>
