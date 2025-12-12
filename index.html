@@ -1,112 +1,133 @@
 <!doctype html>
 <html lang="en">
-<head><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<head>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Meta -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Focus on Political Repression in Southern Africa</title>
-  <meta name="description" content="A beginner friendly template that demonstrates how a new user could explore the Focus Digital Archive.">
+  <title>Focus: Political Repression in Southern Africa</title>
+  <meta name="description" content="Beginner-friendly site explaining political repression in Southern Africa through people, places, events, laws and organisations.">
+  <meta property="og:title" content="Focus: Political Repression in Southern Africa">
+  <meta property="og:description" content="Start from zero; browse people, places, events, laws and themes.">
+  <meta property="og:type" content="website">
+  <!-- Styles -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
-  body{background: var(--bg) url('https://www.transparenttextures.com/patterns/paper-fibers.png')}
-  <meta name="description" content="Beginner-friendly site explaining political repression in Southern Africa through people, places, events, laws and organisations.">
-<meta property="og:title" content="Focus: Political Repression in Southern Africa">
-<meta property="og:description" content="Start from zero: browse people, places, events, laws and themes.">
-<meta property="og:type" content="website">
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <a class="skip-link" href="#browse">Skip to content</a>
 
   <header>
     <div class="container topbar">
       <div class="brand">Focus Digital Archive</div>
       <nav aria-label="Primary">
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="cases.html">Case Studies</a>
-        <a href="how.html">How to Use</a>
+        <a href="#browse">Browse</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
-    <section class="hero">
-  <h1>Focus: Political Repression in Southern Africa</h1>
-  <p>This site helps newcomers understand who was involved, where it happened, and how repression worked — through people, places, events, laws, organisations, and themes.</p>
-  <a class="btn" href="#browse">Start exploring</a>
-</section>
-    
-      <div class="container">
-        <h1>Welcome to the prototype website for the Focus Digital Archive</h1>
-        <p>This prototype shows how a new visitor could navigate the Focus Digital Archive, find entries, and understand the context behind results.</p>
-        
-        <a class="btn" href="how.html">Start exploring</a>
-      </div>
-    </section>
   </header>
 
-  <main id="main" class="container main">
-    
-    <section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Focus: Political Repression in Southern Africa</h1>
+      <p>This site helps newcomers understand who was involved, where it happened, and how repression worked; through people, places, events, laws, organisations, and themes.</p>
+      <a class="btn" href="#browse">Start exploring</a>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- Intro -->
+    <section class="container">
       <h2>What is Focus</h2>
-      <p>Focus refers to the issues produced by the IDAF between the years 1952 to 1992. This website collects these issues and helps readers to access the information in a easy manner where they can traverse the contents by names, places, and subjects. This site is a simple public demo, useful for teaching, talks, and user onboarding.</p>
+      <p>Focus refers to issues produced by the IDAF between 1952 and 1992. This prototype helps readers traverse the contents by names, places, and subjects. It is a simple public demo for teaching, talks, and onboarding.</p>
     </section>
 
-    <section>
+    <!-- Highlights (primary entry points) -->
+    <section class="container">
       <h2>Highlights</h2>
       <div class="grid">
         <article class="card">
           <h3>Browse by People</h3>
-          <p>Search the archive using the names of historical figures included within the collection.</p>
+          <p>Search the archive using names of historical figures and individuals mentioned in the collection.</p>
           <span class="badge">Index</span> <span class="badge">People</span>
         </article>
         <article class="card">
           <h3>Browse by Places</h3>
-          <p>Search the archive for material on a specific location from countries, provinces and towns.</p>
+          <p>Find material by location, from countries and provinces to towns, prisons, and police stations.</p>
           <span class="badge">Index</span> <span class="badge">Places</span>
         </article>
         <article class="card">
           <h3>Browse by Subjects</h3>
-          <p>Search the archive using thematic threads such as Abductions, Banishments.</p>
+          <p>Follow thematic threads, for example abductions and banishments, across time and space.</p>
           <span class="badge">Index</span> <span class="badge">Subjects</span>
         </article>
       </div>
     </section>
 
-    <section id="browse" class="container">
-  <h2>Browse the archive</h2>
-  <div class="cards">
-<section class="container section">
-  <div class="cards cards--secondary">
-    <article class="card"><h3>Archival descriptions.</p></article>
-    <article class="card"><h3>Authority records.</p></article>
-    <article class="card"><h3>Archival institutions.</p></article>
-    <article class="card"><h3>Functions.</p></article>
-    <article class="card"><h3>Subjects.</p></article>
-    <article class="card"><h3>Digital objects.</p></article>
-  </div>
-</section>
+    <!-- Browse sections -->
+    <section id="browse" class="container section">
+      <h2>Browse the archive</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>People</h3>
+          <p>Activists, victims, officials, and witnesses linked to key moments.</p>
+          <a class="btn-secondary" href="#">Browse People</a>
+        </article>
+        <article class="card">
+          <h3>Places</h3>
+          <p>Countries, cities, prisons, and sites of protest across the region.</p>
+          <a class="btn-secondary" href="#">Browse Places</a>
+        </article>
+        <article class="card">
+          <h3>Events</h3>
+          <p>Protests, massacres, trials, and states of emergency.</p>
+          <a class="btn-secondary" href="#">Browse Events</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Secondary archival facets -->
+    <section class="container section">
+      <div class="cards cards--secondary">
+        <article class="card"><h3>Archival descriptions</h3><p>Item-level summaries and context.</p></article>
+        <article class="card"><h3>Authority records</h3><p>Standard names for people and organisations.</p></article>
+        <article class="card"><h3>Archival institutions</h3><p>Repositories and partners.</p></article>
+        <article class="card"><h3>Functions</h3><p>Activities such as policing and censorship.</p></article>
+        <article class="card"><h3>Subjects</h3><p>Detention, torture, exile, surveillance.</p></article>
+        <article class="card"><h3>Digital objects</h3><p>Scans, PDFs, audio, and video.</p></article>
+      </div>
+    </section>
+
+    <!-- Featured case studies -->
+    <section class="container section">
+      <h2>Featured case studies</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Theme: Attacks on Women</h3>
+          <p>How raids, harassment, and detention targeted women in homes, workplaces, and public spaces.</p>
+          <p class="badge">gender</p> <p class="badge">violence</p> <p class="badge">home raids</p>
+        </article>
+        <article class="card">
+          <h3>Event: Soweto Uprising (1976)</h3>
+          <p>Student protests against Afrikaans as a medium of instruction met with lethal force. Key actors, routes, and aftermath.</p>
+          <p class="badge">student protest</p> <p class="badge">police violence</p> <p class="badge">education</p>
+        </article>
+      </div>
+    </section>
   </main>
-  <script src="assets/script.js"></script>
-</body>
-</html>
-.cards--secondary{display:grid;gap:1rem}
-@media (min-width:900px){.cards--secondary{grid-template-columns:repeat(3,1fr)}}
-<section class=" container section">
-  <h2>Featured case studies</h2>
-  <div class="cards">
-    <article class="card">
-      <h3>Theme: Attacks on Women</h3>
-      <p>How raids, harassment and detention targeted women in homes, workplaces and public spaces.</p>
-      <p class="badge">gender</p> <p class="badge">violence</p> <p class="badge">home raids</p>
-    </article>
-    <article class="card">
-      <h3>Event: Soweto Uprising (1976)</h3>
-      <p>Student protests against Afrikaans as a medium of instruction met by lethal force. Key actors, routes and aftermath.</p>
-      <p class="badge">student protest</p> <p class="badge">police violence</p> <p class="badge">education</p>
-    </article>
-  </div>
-</section>
-footer>
+
+  <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> Focus Digital Archive Prototype</small>
+      <p>© <span id="year"></span> Focus Digital Archive Prototype</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
